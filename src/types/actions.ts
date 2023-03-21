@@ -10,6 +10,6 @@ export interface ActionCreator<A, P extends any[] = any[]> {
   (...args: P): A
 }
 
-export interface ActionCreatorMapObject<A = any, P extends any[] = any[]> {
+export interface ActionCreatorsMapObject<A = any, P extends any[] = any[]> {
   [key: string]: ActionCreator<A, P>
 }
